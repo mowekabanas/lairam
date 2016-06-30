@@ -1,0 +1,62 @@
+
+/* Brand */
+
+.Brand {
+	width: 100%;
+}
+
+/* Brand title */
+
+.Brand-title {
+	font-size: 2.25em;
+	font-weight: 400;
+}
+
+/* Brand subtitle */
+
+.Brand-subtitle {
+	font-size: 1.5em;
+	font-weight: 500;
+	letter-spacing: 1.5pt;
+	text-transform: uppercase;
+}
+
+@media (min-width: 48em) {
+
+	/* Brand */
+
+	.Brand {
+		width: 21em;
+		z-index: 2;
+	}
+
+	/* Brand title */
+
+	.Brand-title {
+		font-size: 3em;
+		margin-left: -5px;
+	}
+
+	/* Brand subtitle */
+
+	.Brand-subtitle {
+		font-size: 1.5em;
+	}
+
+}
+
+@media (min-width: 96em) {
+
+	/* Brand title */
+
+	.Brand-title {
+		font-size: 4.5em;
+	}
+
+	/* Brand subtitle */
+
+	.Brand-subtitle {
+		font-size: 3em;
+	}
+
+}

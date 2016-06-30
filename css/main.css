@@ -1,0 +1,36 @@
+
+/* Main */
+
+.Main {
+	width: 100%;
+}
+
+/* Main background */
+
+.Main-background {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+
+/* Main inner */
+
+.Main-inner {
+	height: auto;
+	position: relative;
+	width: 100%;
+}
+
+@media (min-width: 48em) {
+
+	/* Main */
+
+	.Main {
+		margin-top: 8em;
+		min-height: 100vh;
+		position: absolute;
+		right: 0;
+		width: 42em;
+	}
+
+}

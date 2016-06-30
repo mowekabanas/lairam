@@ -1,4 +1,4 @@
-const _PROJECTNAME = 'base';
+const _PROJECTNAME = 'lairam';
 
 var gulp = require('gulp'),
 	concat = require('gulp-concat'),

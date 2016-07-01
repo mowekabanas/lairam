@@ -2,6 +2,16 @@
 /* Brand */
 
 .Brand {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+	-webkit-justify-content: center;
+	justify-content: center;
+	padding-left: 1em;
 	width: 100%;
 }
 
@@ -26,6 +36,8 @@
 	/* Brand */
 
 	.Brand {
+		height: 8em;
+		padding-left: 1.5em;
 		width: 21em;
 		z-index: 2;
 	}

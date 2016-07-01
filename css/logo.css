@@ -4,3 +4,18 @@
 .Logo {
 	z-index: 2;
 }
+
+@media (min-width: 48em) {
+
+	/* Logo */
+
+	.Logo {
+		bottom: 0;
+		height: 1em;
+		left: 0;
+		position: fixed;
+		width: 8em;
+	}
+
+
+}

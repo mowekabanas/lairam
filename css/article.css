@@ -1,0 +1,30 @@
+
+/* Article */
+
+.Article {
+	width: 100%;
+	padding: 1em 1em 0;
+}
+
+@media (min-width: 48em) {
+
+	/* Article */
+
+	.Article {
+		margin-left: -1.5em;
+		max-width: 36em;
+		padding: 1.5em 1em 0 0;
+	}
+
+	.Article h2 {
+		font-size: 3.75em;
+		margin-bottom: .5em;
+	}
+
+	.Article p {
+	    font-size: 1.5em;
+	    margin-bottom: .75em;
+	    line-height: 1.45;
+    }
+
+}

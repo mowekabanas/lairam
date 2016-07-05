@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="">
 <meta charset="UTF-8">
-<title></title>
+<title>Lairam Rossini - Arquiteta e Urbanista</title>
 <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
 <script>
@@ -40,7 +40,19 @@
 
 		</div>
 
-		<div class="Header-logo Logo red"></div>
+		<div class="Header-logo Logo">
+
+			<div class="Logo">
+
+				<div class="Logo-select-area">
+
+					<div id="logo" class="Logo-inner"></div>
+
+				</div>
+
+			</div>
+
+		</div>
 
 	</div>
 
@@ -56,7 +68,14 @@
 
 			<article class="Article font-brown-800">
 
-				<h2>Olá pessoal!</h2>
+				<h2 class="font-teal-700">Olá pessoal!</h2>
+
+				<figure class="red">
+
+					<img src="" alt=""/>
+					
+				</figure>
+
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto at consequatur consequuntur debitis dignissimos dolor dolorem ducimus esse harum ipsa magni minima placeat, quas quasi sapiente sit vitae voluptatem.</p>
 
 			</article>
@@ -67,7 +86,17 @@
 
 </main>
 
-<script></script>
+<script src="dist/js/lairam.js"></script>
+
+<script>
+
+	var logo = new Logo(document.getElementById('logo'), 'img/LairamLogo-pure.svg', function () {
+
+		console.log('aspdfoajsdfasdf');
+
+	});
+
+</script>
 
 </body>
 

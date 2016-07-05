@@ -43,4 +43,20 @@
 		width: 4px;
 	}
 
+    /* Header logo */
+
+	.Header-logo {
+		bottom: 0;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: center;
+		justify-content: center;
+		left: 0;
+		position: fixed;
+		width: 8em;
+	}
+
 }

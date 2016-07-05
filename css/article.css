@@ -16,6 +16,13 @@
 		padding: 1.5em 1em 0 0;
 	}
 
+	.Article figure {
+		background-color: red;
+		height: 2em;
+		width: 100px;
+		right: 0;
+	}
+
 	.Article h2 {
 		font-size: 3.75em;
 		margin-bottom: .5em;

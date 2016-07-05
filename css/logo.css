@@ -5,17 +5,36 @@
 	z-index: 2;
 }
 
+#LairamLogoMain-teal {
+	fill: #00796b;
+}
+
+#LairamLogoMain-brown {
+	fill: #5d4037;
+}
+
 @media (min-width: 48em) {
 
 	/* Logo */
 
 	.Logo {
-		bottom: 0;
-		height: 1em;
-		left: 0;
-		position: fixed;
-		width: 8em;
+		height: 6em;
+		padding-bottom: 1em;
 	}
 
+	.Logo-select-area {
+		height: 100%;
+		width: 100%;
+	}
+
+	.Logo-inner {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		height: 100%;
+		width: auto;
+	}
 
 }

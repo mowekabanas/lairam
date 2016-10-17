@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="">
+<meta charset="UTF-8">
+<title></title>
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+<script>
+	(function(d) {
+		var config = {
+					kitId: 'anl2ysa',
+					scriptTimeout: 3000,
+					async: true
+				},
+				h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	})(document);
+</script>
+<script src="dist/js/villa.min.js"></script>
+<link rel="stylesheet" href="dist/css/villa.min.css"/>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="dist/css/material-colors.css"/>
+<link rel="stylesheet" type="text/css" href="dist/css/villa-cross.min.css"/>
+<script src="dist/js/html5shiv.js"></script>
+<script src="dist/js/html5shiv-printshiv.js"></script>
+<script src="dist/js/classList.min.js"></script>
+<![endif]-->
+
+<style>
+
+	body {
+		background: url("dist/img/overlay.png");
+		background-color: #eeeeee;
+	}
+
+	.container {
+		width: 100%;
+		padding: 0 1em;
+		margin: 0 auto;
+	}
+
+	@media (min-width: 48em) {
+
+		.container {
+			padding: 0 1.5em;
+		}
+
+	}
+
+	@media (min-width: 72em) {
+
+		.container {
+			max-width: 60em;
+		}
+
+	}
+
+	@media (min-width: 96em) {
+
+		.container {
+			max-width: 72em;
+		}
+
+	}
+
+</style>
+
+<style>
+
+	/* Logo */
+
+	.Logo {
+		height: 6em;
+		z-index: 2;
+	}
+
+	/* Logo select area */
+
+	.Logo-select-area {
+		height: 100%;
+		width: 100%;
+	}
+
+	.Logo-inner {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		height: 100%;
+		width: auto;
+	}
+
+	.Logo svg {
+		width: 100%;
+		height: 100%;
+	}
+
+	#LairamLogoMain-teal {
+		fill: #00796b;
+	}
+
+	#LairamLogoMain-brown {
+		fill: #5d4037;
+	}
+
+	@media (min-width: 48em) {
+
+		/* Logo */
+
+		.Logo {
+			height: 8em;
+		}
+
+		/* Logo select area */
+
+		.Logo-select-area {
+			height: 100%;
+			width: 100%;
+		}
+
+	}
+
+</style>
+
+<style>
+
+	.Header {
+		/*height: 100vh;*/
+		position: relative;
+	}
+
+	.Header-background {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+	.Header-logo {
+		margin-bottom: 0;
+	}
+
+	.Header-inner {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-flex-flow: column;
+		flex-flow: column;
+		padding: 4.5em 1em;
+		height: 100%;
+	}
+
+	@media (min-width: 48em) {
+
+		.Header-inner {
+			padding: 4.5em 3em;
+		}
+
+	}
+
+	@media (min-width: 72em) {
+
+		.Header-inner {
+			padding: 6em 6em;
+		}
+
+	}
+
+	@media (min-width: 96em) {
+
+		.Header-inner {
+			padding: 10em 6em;
+		}
+
+	}
+
+</style>
+
+<style>
+
+	/* Brand */
+
+	.Brand {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: column;
+		flex-flow: column;
+		-webkit-justify-content: center;
+		justify-content: center;
+		text-align: center;
+		width: 100%;
+	}
+
+	/* Brand title */
+
+	.Brand-title {
+		font-size: 2.25em;
+		font-weight: 500;
+	}
+
+	/* Brand subtitle */
+
+	.Brand-subtitle {
+		font-size: 1.5em;
+		font-weight: 500;
+		letter-spacing: 1.5pt;
+		text-transform: uppercase;
+	}
+
+	@media (min-width: 48em) {
+
+		/* Brand */
+
+		.Brand {
+			height: 8em;
+			padding-left: 1.5em;
+			z-index: 2;
+		}
+
+		/* Brand title */
+
+		.Brand-title {
+			font-size: 3em;
+			margin-left: -5px;
+		}
+
+		/* Brand subtitle */
+
+		.Brand-subtitle {
+			font-size: 1.5em;
+		}
+
+	}
+
+	@media (min-width: 96em) {
+
+		/* Brand title */
+
+		.Brand-title {
+			/*font-size: 4.5em;*/
+		}
+
+		/* Brand subtitle */
+
+		.Brand-subtitle {
+			/*font-size: 3em;*/
+		}
+
+	    .Brand-cau {
+		    margin: 1rem 0;
+		    font-size: 1.5em;
+		    font-weight: 900;
+		    text-transform: uppercase;
+	    }
+
+	}
+
+</style>
+
+<style>
+
+	.Main {
+		margin-top: -2em;
+	}
+
+	.Main-inner {
+		padding: 0;
+	}
+
+	.Main-hero {
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		display: block;
+		text-align: center;
+		height: 30em;
+		width: 100%;
+	}
+
+	@media (min-width: 48em) {
+
+		.Main-hero {
+			height: 48em;
+		}
+
+	}
+
+</style>
+
+<style>
+
+	.Aside {
+		width: 100%;
+		height: 3em;
+		position: relative;
+	}
+
+	.Aside-inner {
+		position: relative;
+		height: 100%;
+		width: 100%;
+	}
+
+	.Nav {
+		width: 100%;
+		height: 100%;
+	}
+
+	.NavMenu {
+		-webkit-align-items: center;
+		align-items: center;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: center;
+		justify-content: center;
+		height: 100%;
+	}
+
+	.NavMenuItem {
+		margin: 0 .5em;
+	}
+
+	.NavMenuItem-selectArea {
+		color: #4e342e;
+		text-transform: uppercase;
+	}
+
+	.NavMenuItem-selectArea span {
+		font-size: .625em;
+		font-weight: 900;
+	}
+
+	@media (min-width: 48em) {
+
+		.NavMenuItem {
+			margin: 0 1em;
+		}
+
+		.NavMenuItem-selectArea span {
+			font-size: .75em;
+		}
+
+	}
+
+</style>
+
+<style>
+
+	.Footer {
+		position: relative;
+		width: 100%;
+	}
+
+	.Footer p {
+		color: #bdbdbd;
+		font-size: .875em;
+		font-weight: 300;
+		line-height: 1.6;
+		text-align: center;
+	}
+
+	.Footer-inner {
+		position: relative;
+		width: 100%;
+		padding: 6em 1em;
+	}
+
+	@media (min-width: 48em) {
+
+		.Footer p {
+			font-size: 1em;
+		}
+
+	}
+
+</style>
+
+<body>
+
+<aside class="Aside tk-futura-pt">
+
+	<div class="Aside-inner container">
+
+		<nav class="Nav">
+
+			<ul class="NavMenu">
+
+				<li class="NavMenuItem">
+
+					<a href="#" class="NavMenuItem-selectArea"><span>Sobre</span></a>
+
+				</li>
+
+				<li class="NavMenuItem">
+
+					<a href="#" class="NavMenuItem-selectArea"><span>Serviços</span></a>
+
+				</li>
+
+				<li class="NavMenuItem">
+
+					<a href="#" class="NavMenuItem-selectArea"><span>Projetos</span></a>
+
+				</li>
+
+				<li class="NavMenuItem">
+
+					<a href="#" class="NavMenuItem-selectArea"><span>Contato</span></a>
+
+				</li>
+
+			</ul>
+
+		</nav>
+
+	</div>
+
+</aside>
+
+<header class="Header">
+
+	<div class="Header-background"></div>
+
+	<div class="Header-inner container">
+
+		<div class="Logo Header-logo">
+
+			<div class="Logo-select-area">
+
+				<div id="logo" class="Logo-inner"></div>
+
+			</div>
+
+		</div>
+
+		<div class="Header-brand Brand">
+
+			<h1 class="Brand-title tk-futura-pt font-teal-700">Lairam<span class="font-brown-800">Rossini</span></h1>
+			<p class="Brand-subtitle tk-futura-pt-condensed font-brown-800">Arquiteta</p>
+
+			<p class="Brand-cau font-brown-800">CAU - A63957-5</p>
+
+		</div>
+
+	</div>
+
+</header>
+
+<main class="Main">
+
+	<div class="Main-background"></div>
+
+	<div class="Main-inner grey-800 container">
+
+		<section class="Main-hero" style="background-image: url('https://source.unsplash.com/category/buildings')"></section>
+		<!--<section class="Main-hero" style="background-image: url('dist/img/FOTOS%20OBRA%20VALTER/sem%20título%20(17%20de%2085).jpg')"></section>-->
+
+	</div>
+
+</main>
+
+<footer class="Footer tk-futura-pt">
+
+	<div class="Footer-inner container">
+
+		<p>Lairam Rossini © Todos direitos reservados. <br/> Design: Elbit Digital.</p>
+
+	</div>
+
+</footer>
+
+<script src="dist/js/lairam.js"></script>
+
+<script>
+
+	var logo = new Logo(document.getElementById('logo'), 'dist/img/LairamLogo-pure.svg', function () {
+
+		console.log('aspdfoajsdfasdf');
+
+	});
+
+</script>
+
+</body>
+
+</html>

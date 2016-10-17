@@ -68,7 +68,7 @@ source.images.largePhotos = {
 
 var dist = {
 	content: '*',
-	location: './public/dist/'
+	location: './dist/'
 };
 
 dist.css = {
@@ -144,7 +144,7 @@ gulp.task('serve', function () {
 	// Serve files from the root of this project
 	browserSync.init({
 		server: {
-			baseDir: "./public/",
+			baseDir: "./",
 			index: "index.html",
 			routes: {
 				"/home": "./index.html"

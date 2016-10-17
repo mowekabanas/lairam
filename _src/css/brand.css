@@ -11,7 +11,6 @@
 	flex-flow: column;
 	-webkit-justify-content: center;
 	justify-content: center;
-	padding-left: 1em;
 	width: 100%;
 }
 
@@ -37,7 +36,6 @@
 
 	.Brand {
 		height: 8em;
-		padding-left: 1.5em;
 		width: 21em;
 		z-index: 2;
 	}
@@ -46,7 +44,6 @@
 
 	.Brand-title {
 		font-size: 3em;
-		margin-left: -5px;
 	}
 
 	/* Brand subtitle */

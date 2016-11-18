@@ -12,6 +12,7 @@
 
 .ProfileAbout-photo img {
 	display: block;
+	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	/*-webkit-transition: all .6s;*/
 	/*-moz-transition: all .6s;*/

@@ -1,0 +1,89 @@
+
+.ProfileText {
+	color: #009688;
+	position: relative;
+	padding: 1.5em;
+	margin-bottom: 1em;
+}
+
+.ProfileText--about {
+	color: #ffffff;
+}
+
+.ProfileText--about *::selection {
+	background: #ffffff;
+	color: #009688;
+}
+.ProfileText--about *::-moz-selection {
+	background: #ffffff;
+	color: #009688;
+}
+
+.ProfileText h3 {
+	font-size: 1.5em;
+	margin-bottom: .75em;
+}
+
+.ProfileText p {
+	font-size: 1em;
+}
+
+.ProfileText-background {
+	position: absolute;
+	border: solid 4px #009688;
+	width: 100%;
+	height: 100%;
+	opacity: .9;
+	top: 0;
+	left: 0;
+}
+
+.ProfileText--about .ProfileText-background {
+	background-color: #009688;
+	border: none;
+}
+
+.ProfileText-inner {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+}
+
+.ProfileText--about .ProfileText-inner {
+	text-align: left;
+}
+
+@media (min-width: 48em) {
+
+
+	.ProfileText {
+		color: #009688;
+		padding: 3em;
+		margin-bottom: 2.25em;
+	}
+
+	.ProfileText--about {
+		color: #ffffff;
+		display: table-cell;
+	}
+
+	.ProfileText h3 {
+		margin-bottom: 1.5em;
+	}
+
+	.ProfileText p {
+		font-size: 1em;
+	}
+
+	.ProfileText-inner {
+		width: 24em;
+		text-align: center;
+	}
+
+	.ProfileText--about .ProfileText-inner {
+		text-align: left;
+	}
+
+}

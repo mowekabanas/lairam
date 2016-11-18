@@ -16,6 +16,7 @@
 </script>
 <script src="dist/js/villa.min.js"></script>
 <link rel="stylesheet" href="dist/css/villa.min.css"/>
+<link rel="stylesheet" href="dist/css/lairam.css"/>
 <!--[if lt IE 9]>
 <link rel="stylesheet" type="text/css" href="dist/css/material-colors.css"/>
 <link rel="stylesheet" type="text/css" href="dist/css/villa-cross.min.css"/>
@@ -24,369 +25,7 @@
 <script src="dist/js/classList.min.js"></script>
 <![endif]-->
 
-<style>
-
-	body {
-		/*background: url("dist/img/overlay.png");*/
-		background-color: #eeeeee;
-	}
-
-	.container {
-		width: 100%;
-		padding: 0 1em;
-		margin: 0 auto;
-	}
-
-	@media (min-width: 48em) {
-
-		.container {
-			padding: 0 1.5em;
-		}
-
-	}
-
-	@media (min-width: 72em) {
-
-		.container {
-			max-width: 60em;
-		}
-
-	}
-
-	@media (min-width: 96em) {
-
-		.container {
-			max-width: 72em;
-		}
-
-	}
-
-</style>
-
-<style>
-
-	/* Logo */
-
-	.Logo {
-		height: 6em;
-		z-index: 2;
-	}
-
-	/* Logo select area */
-
-	.Logo-select-area {
-		height: 100%;
-		width: 100%;
-	}
-
-	.Logo-inner {
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		height: 100%;
-		width: auto;
-	}
-
-	.Logo svg {
-		width: 100%;
-		height: 100%;
-	}
-
-	#LairamLogoMain-teal {
-		fill: #00796b;
-	}
-
-	#LairamLogoMain-brown {
-		fill: #5d4037;
-	}
-
-	@media (min-width: 48em) {
-
-		/* Logo */
-
-		.Logo {
-			height: 8em;
-		}
-
-		/* Logo select area */
-
-		.Logo-select-area {
-			height: 100%;
-			width: 100%;
-		}
-
-	}
-
-</style>
-
-<style>
-
-	.Header {
-		/*height: 100vh;*/
-		position: relative;
-	}
-
-	.Header-background {
-		height: 100%;
-		left: 0;
-		position: absolute;
-		top: 0;
-		width: 100%;
-	}
-
-	.Header-logo {
-		margin-bottom: 0;
-	}
-
-	.Header-inner {
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-justify-content: center;
-		justify-content: center;
-		-webkit-flex-flow: column;
-		flex-flow: column;
-		padding: 4.5em 1em;
-		height: 100%;
-	}
-
-	@media (min-width: 48em) {
-
-		.Header-inner {
-			padding: 4.5em 3em;
-		}
-
-	}
-
-	@media (min-width: 72em) {
-
-		.Header-inner {
-			padding: 6em 6em;
-		}
-
-	}
-
-	@media (min-width: 96em) {
-
-		.Header-inner {
-			padding: 10em 6em;
-		}
-
-	}
-
-</style>
-
-<style>
-
-	/* Brand */
-
-	.Brand {
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-flow: column;
-		flex-flow: column;
-		-webkit-justify-content: center;
-		justify-content: center;
-		text-align: center;
-		width: 100%;
-	}
-
-	/* Brand title */
-
-	.Brand-title {
-		font-size: 2.25em;
-		font-weight: 500;
-	}
-
-	/* Brand subtitle */
-
-	.Brand-subtitle {
-		font-size: 1.5em;
-		font-weight: 500;
-		letter-spacing: 1.5pt;
-		text-transform: uppercase;
-	}
-
-	@media (min-width: 48em) {
-
-		/* Brand */
-
-		.Brand {
-			height: 8em;
-			padding-left: 1.5em;
-			z-index: 2;
-		}
-
-		/* Brand title */
-
-		.Brand-title {
-			font-size: 3em;
-			margin-left: -5px;
-		}
-
-		/* Brand subtitle */
-
-		.Brand-subtitle {
-			font-size: 1.5em;
-		}
-
-	}
-
-	@media (min-width: 96em) {
-
-		/* Brand title */
-
-		.Brand-title {
-			/*font-size: 4.5em;*/
-		}
-
-		/* Brand subtitle */
-
-		.Brand-subtitle {
-			/*font-size: 3em;*/
-		}
-
-	    .Brand-cau {
-		    margin: 1rem 0;
-		    font-size: 1.5em;
-		    font-weight: 900;
-		    text-transform: uppercase;
-	    }
-
-	}
-
-</style>
-
-<style>
-
-	.Main {
-		margin-top: -2em;
-	}
-
-	.Main-inner {
-		padding: 0;
-	}
-
-	.Main-hero {
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		display: block;
-		text-align: center;
-		height: 30em;
-		width: 100%;
-	}
-
-	@media (min-width: 48em) {
-
-		.Main-hero {
-			height: 48em;
-		}
-
-	}
-
-</style>
-
-<style>
-
-	.Aside {
-		width: 100%;
-		height: 3em;
-		position: relative;
-	}
-
-	.Aside-inner {
-		position: relative;
-		height: 100%;
-		width: 100%;
-	}
-
-	.Nav {
-		width: 100%;
-		height: 100%;
-	}
-
-	.NavMenu {
-		-webkit-align-items: center;
-		align-items: center;
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-justify-content: center;
-		justify-content: center;
-		height: 100%;
-	}
-
-	.NavMenuItem {
-		margin: 0 .5em;
-	}
-
-	.NavMenuItem-selectArea {
-		color: #4e342e;
-		text-transform: uppercase;
-	}
-
-	.NavMenuItem-selectArea span {
-		font-size: .625em;
-		font-weight: 900;
-	}
-
-	@media (min-width: 48em) {
-
-		.NavMenuItem {
-			margin: 0 1em;
-		}
-
-		.NavMenuItem-selectArea span {
-			font-size: .75em;
-		}
-
-	}
-
-</style>
-
-<style>
-
-	.Footer {
-		position: relative;
-		width: 100%;
-	}
-
-	.Footer p {
-		color: #bdbdbd;
-		font-size: .875em;
-		font-weight: 300;
-		line-height: 1.6;
-		text-align: center;
-	}
-
-	.Footer-inner {
-		position: relative;
-		width: 100%;
-		padding: 6em 1em;
-	}
-
-	@media (min-width: 48em) {
-
-		.Footer p {
-			font-size: 1em;
-		}
-
-	}
-
-</style>
-
-<body>
+<body class="tk-futura-pt">
 
 <aside class="Aside tk-futura-pt">
 
@@ -398,25 +37,19 @@
 
 				<li class="NavMenuItem">
 
-					<a href="#" class="NavMenuItem-selectArea"><span>Sobre</span></a>
+					<a href="#perfil" class="NavMenuItem-selectArea"><span>Perfil</span></a>
 
 				</li>
 
 				<li class="NavMenuItem">
 
-					<a href="#" class="NavMenuItem-selectArea"><span>Serviços</span></a>
+					<a href="#projetos" class="NavMenuItem-selectArea"><span>Projetos</span></a>
 
 				</li>
 
 				<li class="NavMenuItem">
 
-					<a href="#" class="NavMenuItem-selectArea"><span>Projetos</span></a>
-
-				</li>
-
-				<li class="NavMenuItem">
-
-					<a href="#" class="NavMenuItem-selectArea"><span>Contato</span></a>
+					<a href="#contato" class="NavMenuItem-selectArea"><span>Contato</span></a>
 
 				</li>
 
@@ -461,18 +94,133 @@
 
 	<div class="Main-background"></div>
 
-	<div class="Main-inner grey-800 container">
+	<div class="Main-inner container">
 
-		<section class="Main-hero" style="background-image: url('https://source.unsplash.com/category/buildings')"></section>
-		<!--<section class="Main-hero" style="background-image: url('dist/img/FOTOS%20OBRA%20VALTER/sem%20título%20(17%20de%2085).jpg')"></section>-->
+		<!--<section class="Main-hero" style="background-image: url('dist/img/photo-landscape-73.jpg'); margin-bottom: 2.25em"></section>-->
+
+		<!--<button>Ver projetos</button>-->
+
+		<section id="perfil" class="Profile">
+
+			<div class="Profile-inner">
+
+				<div class="ProfileAbout">
+
+					<figure class="ProfileAbout-photo">
+
+						<img src="dist/img/photo-profile-1722.jpg" alt=""/>
+						
+					</figure>
+
+					<div class="ProfileText ProfileText--about ProfileAbout-text">
+
+						<div class="ProfileText-background"></div>
+
+						<div class="ProfileText-inner">
+
+							<h3>Lairam Rossini</h3>
+							<p>Arquiteta e Urbanista, atua no desenvolvimento de projetos de Arquitetura, Interiores e Paisagismo residenciais, comerciais, corporativos e institucionais.</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="ProfileText">
+
+					<div class="ProfileText-background"></div>
+
+					<div class="ProfileText-inner">
+
+						<h3>Metodologia</h3>
+						<p>Atendimento personalizado e transparência em todas as etapas do projeto, com dedicação total em cada detalhe, do início à finalização da obra.</p>
+
+					</div>
+
+				</div>
+
+				<div class="ProfileText">
+
+					<div class="ProfileText-background"></div>
+
+					<div class="ProfileText-inner">
+
+						<h3>Propósito</h3>
+						<p>Trabalhar com conceitos que unam estética e funcionalidade, visando a excelência dos serviços e a satisfação dos clientes.</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<section id="projetos" class="Gallery">
+
+			<div class="Gallery-row">
+
+				<figure class="GalleryItem GalleryItem--portrait">
+
+					<img src="dist/img/photo-portrait-17.jpg" alt=""/>
+
+				</figure>
+
+				<figure class="GalleryItem GalleryItem--landscape">
+
+					<img src="dist/img/photo-landscape-38.jpg" alt=""/>
+
+				</figure>
+
+
+
+			</div>
+
+			<div class="Gallery-row">
+
+				<figure class="GalleryItem GalleryItem--landscape">
+
+					<img src="dist/img/photo-landscape-valter-44.jpg" alt=""/>
+
+				</figure>
+
+				<figure class="GalleryItem GalleryItem--portrait">
+
+					<img src="dist/img/photo-portrait-valter-42.jpg" alt=""/>
+
+				</figure>
+
+			</div>
+
+			<div class="Gallery-row">
+
+				<figure class="GalleryItem GalleryItem--landscape">
+
+					<img src="dist/img/photo-landscape-valter-63.jpg" alt=""/>
+
+				</figure>
+
+				<figure class="GalleryItem GalleryItem--portrait">
+
+					<img src="dist/img/photo-portrait-valter-67.jpg" alt=""/>
+
+				</figure>
+
+			</div>
+
+		</section>
+
+		<section id="contato" class="Contact"></section>
 
 	</div>
 
 </main>
 
-<footer class="Footer tk-futura-pt">
+<footer class="Footer tk-futura-pt brown-800 font-white">
 
 	<div class="Footer-inner container">
+		<p class="Footer-cau">CAU - A63957-5</p>
 
 		<p>Lairam Rossini © Todos direitos reservados. <br/> Design: Elbit Digital</p>
 

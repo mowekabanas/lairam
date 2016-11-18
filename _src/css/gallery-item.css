@@ -1,0 +1,46 @@
+
+/* Gallery Item */
+
+.GalleryItem {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	overflow: hidden;
+	padding: .5em 1em;
+}
+
+.GalleryItem img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+@media (min-width: 48em) {
+
+	.GalleryItem {
+		padding: .5em .5em;
+	}
+
+	.GalleryItem--landscape {
+		width: 68.4%;
+	}
+
+	.GalleryItem--portrait {
+		width: 31.6%;
+	}
+
+}
+
+@media (min-width: 72em) {
+
+	.GalleryItem--landscape {
+		width: 68.6%;
+	}
+
+	.GalleryItem--portrait {
+		width: 31.4%;
+	}
+
+}

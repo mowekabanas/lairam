@@ -1,0 +1,27 @@
+
+.Profile {
+	width: 100%;
+}
+
+.Profile-inner {
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+	padding: 0 1em;
+	position: relative;
+	width: 100%;
+}
+
+@media (min-width: 48em) {
+
+	.Profile-inner {
+		padding: 1em 0;
+	}
+
+}

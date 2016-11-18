@@ -2,10 +2,9 @@
 /* Header */
 
 .Header {
-	width: 100%;
+	/*height: 100vh;*/
+	position: relative;
 }
-
-/* Header background */
 
 .Header-background {
 	height: 100%;
@@ -15,48 +14,44 @@
 	width: 100%;
 }
 
-/* Header inner */
+.Header-logo {
+	margin-bottom: 0;
+}
 
 .Header-inner {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+	padding: 4.5em 1em;
 	height: 100%;
-	position: relative;
 }
 
 @media (min-width: 48em) {
 
-	/* Header */
-
-	.Header {
-		position: absolute;
-		width: 50%;
-		left: 0;
-		top: 0;
+	.Header-inner {
+		padding: 3em 3em;
 	}
 
-	/* Header background */
+}
 
-	.Header-background {
-		height: 100%;
-		left: 0;
-		position: absolute;
-		top: 0;
-		width: 4px;
+@media (min-width: 72em) {
+
+	.Header-inner {
+		padding: 4.5em 6em;
 	}
 
-    /* Header logo */
+}
 
-	.Header-logo {
-		bottom: 0;
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-justify-content: center;
-		justify-content: center;
-		left: 0;
-		position: fixed;
-		width: 8em;
+@media (min-width: 96em) {
+
+	.Header-inner {
+		padding: 6em 6em;
 	}
 
 }

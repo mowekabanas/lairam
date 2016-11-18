@@ -11,6 +11,7 @@
 	flex-flow: column;
 	-webkit-justify-content: center;
 	justify-content: center;
+	text-align: center;
 	width: 100%;
 }
 
@@ -18,15 +19,22 @@
 
 .Brand-title {
 	font-size: 2.25em;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 /* Brand subtitle */
 
 .Brand-subtitle {
-	font-size: 1.5em;
+	font-size: 1.3125em;
 	font-weight: 500;
 	letter-spacing: 1.5pt;
+	text-transform: uppercase;
+}
+
+.Brand-cau {
+	margin: .5rem 0;
+	font-size: 1.125em;
+	font-weight: 100;
 	text-transform: uppercase;
 }
 
@@ -36,7 +44,6 @@
 
 	.Brand {
 		height: 8em;
-		width: 21em;
 		z-index: 2;
 	}
 
@@ -44,6 +51,7 @@
 
 	.Brand-title {
 		font-size: 3em;
+		margin-left: -5px;
 	}
 
 	/* Brand subtitle */
@@ -59,13 +67,18 @@
 	/* Brand title */
 
 	.Brand-title {
-		font-size: 4.5em;
+		/*font-size: 4.5em;*/
 	}
 
 	/* Brand subtitle */
 
 	.Brand-subtitle {
-		font-size: 3em;
+		/*font-size: 3em;*/
+	}
+
+	.Brand-cau {
+		margin: 1rem 0;
+		font-size: 1.5em;
 	}
 
 }

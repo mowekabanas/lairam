@@ -1,0 +1,44 @@
+
+.ProfileAbout {
+	width: 100%;
+	margin-bottom: 1em;
+	position: relative;
+}
+
+.ProfileAbout-photo {
+	position: relative;
+	width: 100%;
+}
+
+.ProfileAbout-photo img {
+	display: block;
+	filter: grayscale(100%);
+	/*-webkit-transition: all .6s;*/
+	/*-moz-transition: all .6s;*/
+	/*-ms-transition: all .6s;*/
+	/*-o-transition: all .6s;*/
+	/*transition: all .6s;*/
+	width: 100%;
+}
+
+.ProfileAbout-photo img:hover {
+	/*filter: grayscale(0);*/
+}
+
+@media (min-width: 48em) {
+
+	.ProfileAbout {
+		margin-bottom: 2.25em;
+	}
+
+	.ProfileAbout-photo {
+		text-align: right;
+		margin-bottom: -12em;
+	}
+
+	.ProfileAbout-photo img {
+		display: inline;
+		width: 36em;
+	}
+
+}

@@ -1,0 +1,47 @@
+
+/* Footer */
+
+.Footer {
+	position: relative;
+	margin-top: 1em;
+	width: 100%;
+}
+
+.Footer p {
+	color: #bcaaa4;
+	font-size: .875em;
+	font-weight: 300;
+	line-height: 1.6;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.Footer-inner {
+	position: relative;
+	width: 100%;
+	padding: 6em 1em;
+}
+
+p.Footer-cau {
+	color: #a1887f;
+}
+
+@media (min-width: 48em) {
+
+	.Footer {
+		margin-top: 2.25em;
+	}
+
+	.Footer p {
+		font-size: 1em;
+	}
+
+}
+
+@media (min-width: 60em) {
+
+	.Footer {
+		margin-top: 3em;
+	}
+
+}

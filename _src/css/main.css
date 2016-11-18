@@ -2,50 +2,36 @@
 /* Main */
 
 .Main {
-	width: 100%;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
+	margin-top: -2em;
 }
-
-/* Main background */
-
-.Main-background {
-	height: 100%;
-	position: absolute;
-	width: 100%;
-}
-
-/* Main inner */
 
 .Main-inner {
-	height: auto;
-	position: relative;
+	padding: 0;
+}
+
+.Main-hero {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	display: block;
+	text-align: center;
+	height: 16em;
 	width: 100%;
 }
 
 @media (min-width: 48em) {
 
-	/* Main */
-
-	.Main {
-		margin-top: 10em;
-		position: relative;
-		height: 100%;
-		width: 100%;
+	.Main-hero {
+		height: 30em;
 	}
 
-	.Main-wrapper {
-		position: relative;
-		display: block;
-		width: 100%;
-		height: 100%;
-	}
+}
 
-    .Main-inner {
-	    height: 100vh;
-    }
+@media (min-width: 60em) {
+
+	.Main-hero {
+		height: 40em;
+	}
 
 }

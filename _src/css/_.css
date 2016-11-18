@@ -4,3 +4,50 @@
  * Licensed under MIT (https://github.com/mowekabanas/base/blob/master/LICENSE)
 */
 
+button {
+	border-radius: 0;
+	background-color: #009688;
+	border: none;
+	color: #ffffff;
+	font-weight: 900;
+	display: block;
+	margin: 1em auto;
+	height: 3.7em;
+	padding: 0 1em;
+}
+
+body {
+	background: url("../img/bg.jpg") center top repeat;
+	background-color: #eeeeee;
+}
+
+.container {
+	width: 100%;
+	padding: 0 1em;
+	margin: 0 auto;
+}
+
+@media (min-width: 48em) {
+
+	.container {
+		padding: 0 1.5em;
+	}
+
+}
+
+@media (min-width: 72em) {
+
+	.container {
+		max-width: 60em;
+	}
+
+}
+
+*::selection {
+	background: #009688;
+	color: #ffffff;
+}
+*::-moz-selection {
+	background: #009688;
+	color: #ffffff;
+}

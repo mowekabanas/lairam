@@ -30,7 +30,7 @@ var gulp = require('gulp'),
  * http://www.imagemagick.org/script/binary-releases.php
  * */
 
-const tinypngToken = false;
+const tinypngToken = 'c8yyMiCZDZU7wE4SWDTxiKdNcEq7krZU';
 
 // Source Content structure
 
@@ -68,7 +68,7 @@ source.images.largePhotos = {
 
 var dist = {
 	content: '*',
-	location: './dist/'
+	location: './public/dist/'
 };
 
 dist.css = {
@@ -79,6 +79,11 @@ dist.css = {
 dist.js = {
 	content: '*.js',
 	location: dist.location + 'js/'
+};
+
+dist.images = {
+	content: '*.*',
+	location: dist.location + 'img/'
 };
 
 // CSS
@@ -119,18 +124,36 @@ gulp.task('js-watch', ['js'], function () {
 
 // IMAGES
 
-gulp.task('resizePhotos', function () {
-	gulp.src(source.images.location + source.images.content)
+gulp.task('resizePortraitPhotos', function () {
+	gulp.src(source.images.location + 'photo-portrait-*')
 		.pipe(imageResize({
-			height : 960,
+			height: 720,
 			upscale : false
 		}))
-		.pipe(gulp.dest(dist.location + source.images.largePhotos.location));
+		.pipe(gulp.dest(dist.images.location));
 });
 
-gulp.task('tinyPhotosSource', function () {
+gulp.task('resizeLandscapePhotos', function () {
+	gulp.src(source.images.location + 'photo-landscape-*')
+		.pipe(imageResize({
+			width : 960,
+			upscale : false
+		}))
+		.pipe(gulp.dest(dist.images.location));
+});
+
+gulp.task('resizeProfilePhotos', function () {
+	gulp.src(source.images.location + 'photo-profile-*')
+		.pipe(imageResize({
+			width : 600,
+			upscale : false
+		}))
+		.pipe(gulp.dest(dist.images.location));
+});
+
+gulp.task('tinySource', function () {
 	if (tinypngToken)
-		gulp.src(source.images.location + source.images.content)
+		gulp.src(source.images.location + 'tiny/' + source.images.content)
 			.pipe(tinypng(tinypngToken))
 			.pipe(gulp.dest(source.images.location));
 	else
@@ -144,7 +167,7 @@ gulp.task('serve', function () {
 	// Serve files from the root of this project
 	browserSync.init({
 		server: {
-			baseDir: "./",
+			baseDir: "./public/",
 			index: "index.html",
 			routes: {
 				"/home": "./index.html"

@@ -1,0 +1,107 @@
+
+/* Contact Form Status */
+
+.ContactFormStatus {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	padding: 0 1em;
+}
+
+/* Contact Form Status text */
+
+.ContactFormStatus-text {
+	display: none;
+	font-size: .875em;
+	font-weight: 600;
+	margin-bottom: .5em;
+}
+
+.ContactForm.is-success .ContactFormStatus-text--success,
+.ContactForm.is-sending .ContactFormStatus-text--sending,
+.ContactForm.is-error .ContactFormStatus-text--error,
+.ContactForm.is-fail .ContactFormStatus-text--fail {
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+.ContactForm.is-sending .ContactFormStatus-text--sending {
+	-webkit-animation: sendAnimation infinite .6s ease;
+	-o-animation: sendAnimation infinite .6s ease;
+	animation: sendAnimation infinite .6s ease;
+}
+
+/* Send Animation keyframes */
+
+@-webkit-keyframes sendAnimation {
+
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: .48;
+	}
+
+	100% {
+		opacity: 1;
+	}
+
+}
+
+@-o-keyframes sendAnimation {
+
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: .48;
+	}
+
+	100% {
+		opacity: 1;
+	}
+
+}
+
+@-moz-keyframes sendAnimation {
+
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: .48;
+	}
+
+	100% {
+		opacity: 1;
+	}
+
+}
+
+@keyframes sendAnimation {
+
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: .48;
+	}
+
+	100% {
+		opacity: 1;
+	}
+
+}

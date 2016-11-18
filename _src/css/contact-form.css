@@ -1,0 +1,57 @@
+
+/* Contact Form */
+
+.ContactForm {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+	position: relative;
+	width: 100%;
+}
+
+/* Contact Form input and textarea */
+
+.ContactForm input,
+.ContactForm textarea {
+	background: none;
+	border: 0;
+	font-family: sans-serif;
+}
+
+/* Contact Form textarea (hide auto scroll on ie) */
+
+.ContactForm textarea {
+	overflow: auto;
+	resize: none;
+}
+
+/* Contact Form row */
+
+.ContactForm-row {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	width: 100%;
+}
+
+@media (min-width: 48em) {
+
+	/* Contact Form */
+
+	.ContactForm {
+		max-width: 33em;
+	}
+
+}

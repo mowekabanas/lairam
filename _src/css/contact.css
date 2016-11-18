@@ -1,0 +1,54 @@
+
+/* Contact */
+
+.Contact {
+	padding: 6em 0;
+	position: relative;
+}
+
+/* Contact background */
+
+.Contact-background {
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+/* Contact inner */
+
+.Contact-inner {
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+/* Contact header */
+
+.Contact-header {
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+	margin-bottom: 1.5em;
+	width: 100%;
+}

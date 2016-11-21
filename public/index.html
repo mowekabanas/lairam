@@ -211,7 +211,88 @@
 
 		</section>
 
-		<section id="contato" class="Contact"></section>
+		<section id="contato" class="Contact">
+
+			<div class="Contact-background"></div>
+
+			<div class="Contact-inner container">
+
+				<!--<header class="Contact-header">-->
+				<!---->
+				<!--<h2 class="font-amber-800">Contato</h2>-->
+				<!--<p>Entre em contato conosco!</p>-->
+				<!---->
+				<!--</header>-->
+
+				<form id="cForm" class="ContactForm" novalidate>
+
+					<div class="ContactFormField" data-empty="Informe um nome" data-invalid="Informe dados válidos">
+
+						<label for="cName">NOME</label>
+						<input id="cName" type="text" autocomplete="off" spellcheck="false" class="ContactFormField-input" placeholder="Nome"/>
+
+					</div>
+
+					<div class="ContactForm-row">
+
+						<div class="ContactFormField ContactFormField--split" data-field-group="communication" data-empty="Informe um email" data-invalid="Informe um email válido">
+
+							<label for="cEmail">EMAIL</label>
+							<input id="cEmail" type="email" autocomplete="off" spellcheck="false" class="ContactFormField-input" placeholder="E-mail"/>
+
+						</div>
+
+						<div class="ContactFormField ContactFormField--split" data-field-group="communication" data-empty="Informe um telefone" data-invalid="Informe um telefone válido">
+
+							<label for="cPhone">TELEFONE</label>
+							<input id="cPhone" type="tel" autocomplete="off" class="ContactFormField-input" placeholder="Telefone"/>
+
+						</div>
+
+					</div>
+
+					<div class="ContactFormField" data-empty="Informe uma mensagem">
+
+						<label for="cMessage">MENSAGEM</label>
+						<textarea id="cMessage" spellcheck="false" class="ContactFormField-input ContactFormField--message" placeholder="Mensagem"></textarea>
+
+					</div>
+
+					<div class="ContactFormStatus">
+
+					<span class="ContactFormStatus-text ContactFormStatus-text--sending font-light-blue-a700">
+						Enviando...
+					</span>
+
+						<span class="ContactFormStatus-text ContactFormStatus-text--success font-light-green-a700">
+						Enviado com sucesso!
+					</span>
+
+						<span class="ContactFormStatus-text ContactFormStatus-text--error font-red-a700">
+						Não foi possível enviar, verifique os campos e tente novamente.
+					</span>
+
+						<span class="ContactFormStatus-text ContactFormStatus-text--fail font-red-a700">
+						Houve algum problema, tentando novamente...
+					</span>
+
+					</div>
+
+					<div class="ContactFormButton">
+
+						<button id="cSubmit" type="submit" value="Enviar" class="ContactFormField-button Button">
+
+							<span>Enviar</span>
+
+						</button>
+
+					</div>
+
+				</form>
+
+			</div>
+
+		</section>
 
 	</div>
 
@@ -237,6 +318,11 @@
 		console.log('aspdfoajsdfasdf');
 
 	});
+
+	var requiredFields = document.querySelectorAll('.ContactFormField');
+
+	for (var i = requiredFields.length; i--; )
+		requiredFields[i].requiredField = new RequiredField(requiredFields[i], '.ContactFormField-input');
 
 </script>
 

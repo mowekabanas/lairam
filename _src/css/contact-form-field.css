@@ -2,8 +2,9 @@
 /* Contact Form Field */
 
 .ContactFormField {
-	border: solid 1px #424242;
-	border-radius: 3px;
+	background-color: #ffffff;
+	border: solid 2px transparent;
+	/*border-radius: 3px;*/
 	display: block;
 	margin-bottom: 1.5em;
 	overflow: hidden;
@@ -76,11 +77,11 @@
 /* Contact Form Field focused style */
 
 .ContactFormField.is-valid {
-	border-color: #ff4081;
+	border-color: #a7ffeb;
 }
 
 .ContactFormField.has-focus {
-	border-color: #ff4081;
+	border-color: #80d8ff;
 }
 
 /* Contact Form Field labeled style */
